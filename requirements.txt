@@ -1,0 +1,5 @@
+sanic
+aiohttp
+aiofiles
+requests
+motor
