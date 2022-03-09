@@ -1,1 +1,1 @@
-web: et up
+web: et up -p $PORT
