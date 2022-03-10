@@ -14,7 +14,7 @@ class MongoClientHelper:
 
     def __init__(self):
         self.client = amotor.AsyncIOMotorClient(
-            os.getenv("DB_HOSTNAME", "localhost"), 27017
+            os.getenv("DB_HOSTNAME", "localhost"), os.getenv("MONGODB_PORT", 27017),
         )
         self.db = self.client[os.getenv("ETELEMETRY_DB", "et")]
         self.requests = self.db["requests"]
